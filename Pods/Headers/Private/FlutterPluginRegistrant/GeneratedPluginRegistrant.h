@@ -1,0 +1,1 @@
+../../../../../../AndroidLab/flutter_keyboard/.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.h

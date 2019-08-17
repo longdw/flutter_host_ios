@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_keyboard (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `../../AndroidLab/flutter_keyboard/.ios/Flutter/engine`)
+  - flutter_keyboard (from `../../AndroidLab/flutter_keyboard/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../../AndroidLab/flutter_keyboard/.ios/Flutter/FlutterPluginRegistrant`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../../AndroidLab/flutter_keyboard/.ios/Flutter/engine"
+  flutter_keyboard:
+    :path: "../../AndroidLab/flutter_keyboard/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../../AndroidLab/flutter_keyboard/.ios/Flutter/FlutterPluginRegistrant"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_keyboard: cfa46c4b4a33fa6550cf9d93419415e551d840f2
+  FlutterPluginRegistrant: 8855ca2b426d228cb41aa6c26c0c83b8c49e3593
+
+PODFILE CHECKSUM: 38f0190b775210fa8ebc6d1ccd34f2e1307f1311
+
+COCOAPODS: 1.6.1
