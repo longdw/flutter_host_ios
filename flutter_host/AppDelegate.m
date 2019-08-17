@@ -6,7 +6,9 @@
 //  Copyright © 2019年 longdw. All rights reserved.
 //
 
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
+    [self.flutterEngine runWithEntrypoint:nil];
+    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    ViewController *vc = [[ViewController alloc] init];
+    
+    self.window.rootViewController = vc;
+    
+    [self.window makeKeyAndVisible];
+    
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 
